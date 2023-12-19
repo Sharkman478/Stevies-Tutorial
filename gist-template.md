@@ -26,7 +26,7 @@ In this regex expression there are 2 different anchors there is the ^ symbol and
 ### Quantifiers
 There is only one quantifier in this expression and that is the + symbol. This symbol means that the things before it must happen at least once or more times. This is necessary for almost all expression because something has to happen in a regex expression for it to be true. The + in this expression means that there needs to be "a-z" and "0-9" at least once or more times and the "_" in that character group signified by the "[]".
 ### Grouping Constructs
-
+The grouping in this expression is grouping together different text and characters that are entered to the email. ([a-z0-9_\.-]+) This is the first part of the email usually housing the first and last name of a user then maybe some numbers after it then an underscore. After this first grouping of the first part it is inputting an @ symbol then onto the other parts of the expression. ([\da-z\.-]+) This part of the expression is the email part (ex. Gmail or yahoo) of the expression it can be any word a-z. After that part ([a-z\.]{2,6}) it is the tag on the end (ex. .com or .gov), and this section is different because the user can put any character from a-z but the word has to be between 2 and 6 characters long setting up parameters for the tag.
 ### Bracket Expressions
 
 ### Character Classes
